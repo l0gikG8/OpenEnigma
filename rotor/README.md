@@ -3,4 +3,4 @@ Description
 
   Decorative rotor
 
- ![ScreenShot](https://raw.github.com/l0gikG8/OpenEnigma/rotor/pictures/rotor.png)
+ ![ScreenShot](https://raw.githubusercontent.com/l0gikG8/OpenEnigma/master/rotor/pictures/rotor.png)
