@@ -26,11 +26,13 @@ module sidePlate() {
 
 module bottomPlate() {
 	$fn=100;
+	roundedCornerRadius=1.5;
+	ledge=3;
 	difference() {
 		cube([IB[X]+t, IB[Y]+t, t]);
-		translate([IB[X]/4, IB[Y]/4, -t/2]) minkowski() {
-			cube([IB[X]/2, IB[Y]/2, t]);
-			cylinder(r=2,h=t);
+		translate( [ t + 2*roundedCornerRadius + ledge, t + 2*roundedCornerRadius + ledge, -t] / 2 ) minkowski() {
+			cube([IB[X]-2*roundedCornerRadius-ledge, IB[Y]-2*roundedCornerRadius-ledge, t]);
+			cylinder( r=roundedCornerRadius, h=t );
 		}
 	}
 }
@@ -43,12 +45,11 @@ module internalBox() {
 			translate([IB[X]+t, 0, 0]) mirror([1, 0, 0]) sidePlate();
 			bottomPlate();
 		}
-		translate([t/2,t/2,IB[Z]-TPL[Z]]) cube(TPL);
+		translate([t/2,t/2,IB[Z]-TPL[Z]]) cube(TPL);    //TopPlate
 	}
 }
 
-translate (-[IB[X]/2, IB[Y]/2, 0]) internalBox();
-
+translate ([-(IB[X]+t)/2, -(IB[Y]+t)/2, 0]) internalBox();
 
 
 
