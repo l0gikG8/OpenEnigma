@@ -89,7 +89,7 @@ DIM_LOWER_RIGHT = 3;
  * part.
  */
 
-DIM_LINE_WIDTH = .025; // width of dimension lines
+DIM_LINE_WIDTH = .075; // width of dimension lines
 DIM_SPACE = .1;  // a spacing value to make it easier to adjust line spacing etc
 DIM_HEIGHT = .01; // height of lines
 
