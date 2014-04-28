@@ -10,3 +10,4 @@ To do
 *   Get correct location of USB plug cutout
 
  ![ScreenShot](https://raw.githubusercontent.com/l0gikG8/OpenEnigma/master/boxes/pictures/internalBox.png)
+ ![Rendering](https://raw.githubusercontent.com/l0gikG8/OpenEnigma/master/boxes/stl/internalBox.stl)
